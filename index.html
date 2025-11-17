@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="CARE - Clinician Augmented Reality Environment: Design and Technical Feasibility of Apple Vision Pro for Image-guided Surgeries">
+  <meta name="keywords" content="CARE, Augmented Reality, Surgery, Apple Vision Pro, Image-guided Surgery">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CARE - Clinician Augmented Reality Environment</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">CARE - Clinician Augmented Reality Environment</h1>
+          <h2 class="title is-3" style="margin-top: 0;">Design and Technical Feasibility of Apple Vision Pro for Image-guided Surgeries</h2>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/zxlwang/">Ze Xia Lucas Wang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Marianny De León</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://boezzz.com">Boyang Zhou</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Sai Jayanth Kalisi</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Keith Meng Phou</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Jennifer Han</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Yijun Chen</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Alicia Betty</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Oliver Aalami</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="#">Alberto Paderno</a><sup>4</sup>,</span>
+            <span class="author-block">
+              <a href="mailto:rhussein@uw.edu">Rania Hussein</a><sup>1*</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Washington,</span>
+            <span class="author-block"><sup>2</sup>Northeastern University,</span>
+            <span class="author-block"><sup>3</sup>Stanford University,</span>
+            <span class="author-block"><sup>4</sup>Humanitas University, Italy</span>
+          </div>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*</sup>Corresponding Author: rhussein@uw.edu</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-alt"></i>
+                  </span>
+                  <span>Paper (Coming Soon)</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-laptop-code"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/amalgramDesign_new.png" alt="CARE system comparison - operating room with and without AR" style="width: 100%;">
+      <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
+        <span class="dnerf">CARE</span> enables surgeons to view and manipulate virtual monitors in AR, improving ergonomics and reducing the need for physical monitor adjustments during image-guided procedures.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            <strong>Objective:</strong> Incorporating augmented reality into surgical workflows can enhance surgeon performance by providing real-time feedback and improving interaction with monitors during image-guided procedures. This study explores using the Apple Vision Pro, a head-mounted AR device, to support such procedures, simplify the operating room, and improve situational awareness.
+          </p>
+          <p>
+            <strong>Design and Methods:</strong> We developed and iteratively refined a prototype system with input from practicing surgeons to iteratively assess and refine its clinical usability.
+          </p>
+          <p>
+            <strong>Engineering and Results:</strong> Our system, CARE, uses a LAN video-casting stack to stream video from image-guided surgery equipment like the Karl Storz IMAGE1 S™, achieving latencies under 71 ms for 1080p and around 200 ms for 4K - outperforming many existing solutions.
+          </p>
+          <p>
+            <strong>Discussion:</strong> The Apple Vision Pro's passthrough, hand, and eye tracking features make it a strong candidate for surgical use. Our minimum viable product lays the groundwork for clinical deployment.
+          </p>
+          <p>
+            <strong>Conclusion:</strong> The technology stack shows promising competitive latency. Future work will involve operating room clinical trials for further usability findings.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">System Architecture</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            The CARE system architecture streams video from surgical equipment through a capture card to a streaming server, which transmits to the Apple Vision Pro over a controlled local network. This setup minimizes latency while maintaining high video quality for critical surgical decision-making.
+          </p>
+        </div>
+
+        <div style="margin-top: 30px;">
+          <img src="./static/images/Architecture_Diagram_2.png" alt="CARE System Architecture - Data Flow" style="width: 100%; margin-bottom: 10px;">
+          <p class="has-text-centered" style="margin-bottom: 40px;"><em>Video streaming pipeline</em></p>
+
+          <img src="./static/images/care_arch.png" alt="CARE System Architecture - Detailed" style="width: 100%; margin-bottom: 10px;">
+          <p class="has-text-centered"><em>Detailed system architecture</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background-color: #f5f5f5;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Key Features</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            Based on interviews with nine anesthesiologists and three surgeons, we identified three core interaction features that address the challenges of fixed monitor setups and the need for dynamic adjustments during procedures:
+          </p>
+        </div>
+
+        <div class="columns" style="margin-top: 30px;">
+          <div class="column is-one-third">
+            <div class="box" style="height: 100%;">
+              <h3 class="title is-5">1. Drag Surgical Screen</h3>
+              <p>
+                The surgeon selects a window for movement, and a handle appears at the bottom edge, enabling a pinch-and-drag action to reposition the window within the space.
+              </p>
+            </div>
+          </div>
+
+          <div class="column is-one-third">
+            <div class="box" style="height: 100%;">
+              <h3 class="title is-5">2. Resize Surgical Screen</h3>
+              <p>
+                When the surgeon gazes at the bottom corners of a window, a curved handle appears. By pinching and moving hands outward diagonally, they can increase the scale. Moving hands inward scales the view down.
+              </p>
+            </div>
+          </div>
+
+          <div class="column is-one-third">
+            <div class="box" style="height: 100%;">
+              <h3 class="title is-5">3. Eye-Gaze Monitor Selection</h3>
+              <p>
+                Surgeons can reference a selection of monitors at the bottom of their vision, stare to select a monitor, and the selected monitor will be displayed in front of them—crucial when hands are occupied.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-centered" style="margin-top: 30px;">
+          <div class="column is-three-quarters">
+            <img src="./static/images/extra_features.jpg" alt="CARE Feature Sketches" style="width: 100%;">
+            <p class="has-text-centered" style="margin-top: 10px;"><em>Conceptual sketches of AR interaction features for surgical workflows</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Performance Results</h2>
+
+    <div class="content has-text-justified">
+      <p>
+        Our system achieved low-latency video streaming with <strong>&lt;71ms for 1080p wireless</strong> and <strong>~54ms for 1080p wired</strong>, outperforming several existing AR surgical systems (Ruijters: ~300ms, Askeland: ~285ms).
+      </p>
+    </div>
+
+    <div class="columns is-centered" style="margin-top: 20px;">
+      <div class="column is-two-thirds">
+        <table class="table is-bordered is-striped is-fullwidth">
+          <thead>
+            <tr>
+              <th>Video Format</th>
+              <th>Connection Mode</th>
+              <th>Average Latency (ms)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background-color: #d4edda;">
+              <td><strong>1080p</strong></td>
+              <td><strong>Wireless</strong></td>
+              <td><strong>70.77</strong></td>
+            </tr>
+            <tr>
+              <td>4K</td>
+              <td>Wireless</td>
+              <td>198.8</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="has-text-centered" style="margin-top: 10px;"><em>System latency measurements suitable for real-time surgical applications</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background-color: #f5f5f5;">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Discussion & Future Work</h2>
+
+    <div class="content has-text-justified">
+      <p>
+        The Apple Vision Pro demonstrates significant potential for enhancing surgical workflows through AR. Our system achieved sub-100ms latency for 1080p video, critical for clinical decision-making. The hand gesture and eye-tracking interactions address clinician needs for flexible, customizable interfaces while reducing reliance on assistants.
+      </p>
+
+      <p><strong>Clinical Benefits:</strong> Improved ergonomics through customizable monitor placement, reduced sterilization breaches via virtual monitors, enhanced situational awareness with real-time information overlay, and simplified operating room setup.</p>
+
+      <p><strong>Future Work:</strong> Clinical testing in operating rooms with our partners Dr. Paderno and Dr. Aalami, focusing on long-term comfort, performance validation in varying environments, multi-source integration, and advanced features like 3D anatomical overlays.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Acknowledgments</h2>
+
+    <div class="content has-text-justified">
+      <p>
+        We thank our clinical partners Dr. Alberto Paderno and Dr. Oliver Aalami for their surgical insights. We are grateful to the University of Washington (Remote Hub Labs), Stanford University (Spezi Labs), UW CoMotion, and the NSF I-Corps Hub Northwest Regional program for their support.
+      </p>
+
+      <p>
+        We acknowledge the open-source communities behind <a href="https://github.com/saagarjha/Ensemble">Ensemble</a>, <a href="https://obsproject.com/">OBS</a>, and <a href="https://github.com/Stengo/DeskPad">DeskPad</a>, whose foundational work enabled our Vision Pro streaming workflow.
+      </p>
+
+      <p>
+        This project builds on Dr. Oliver Aalami's original 2016 work investigating Google Glass for intraoperative monitoring, delivering a modern reassessment of AR feasibility in image-guided surgery.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{wang2025care,
+  author    = {Wang, Ze Xia Lucas and De León, Marianny and Zhou, Boyang and Kalisi, Sai Jayanth and Phou, Keith Meng and Han, Jennifer and Chen, Yijun and Betty, Alicia and Aalami, Oliver and Paderno, Alberto and Hussein, Rania},
+  title     = {CARE - Clinician Augmented Reality Environment: Design and Technical Feasibility of Apple Vision Pro for Image-guided Surgeries},
+  journal   = {},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website template is based on the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies project page.</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
